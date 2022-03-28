@@ -1,0 +1,59 @@
+count characters:
+$ SO="stackoverflow"
+$ echo -n "$SO" | wc -c
+    >>13
+
+Or, if you only want the total:
+
+$ cat folder/* | wc -l
+
+
+wc command flags:
+-l, --lines - Print the number of lines.
+-w, --words - Print the number of words.
+-m, --chars - Print the number of characters.
+-c, --bytes - Print the number of bytes.
+-L, --max-line-length - Print the length of the longest line.
+
+
+var1=10
+var2=20
+
+sum=`expr $var1 + $var2`
+sum=$(($var1 + $var2))
+4
+
+
+echo $sum
+
+
+append text to end of file using echo command:
+echo 'text here' >> filename
+Append command output to end of file:
+command-name >> filename
+
+#!/bin/bash
+#comment
+
+./skrypt1.sh abc
+
+#!/bin/bash
+for arg in $*
+do
+echo "Argument: $arg"
+done
+
+
+
+
+#!/bin/bash
+#zad 1 - kolokwium
+
+cat $1 | grep 2.0 | wc -l >> cat > ile_dwojek.txt 
+
+
+#!/bin/bash
+#zad 2 - kolokwium
+
+cat $1 | grep daemon | wc -l
+
